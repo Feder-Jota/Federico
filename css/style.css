@@ -1,0 +1,200 @@
+/*poner arriba de todo las fonts asi la pagina carga mas rapido*/
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+/* reseteo "selector universal" */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%; /*para usar rem tamaño de letra*/
+}
+
+body{
+    background-image: url(../img/pngegg.png);
+    background-repeat:  repeat ;
+    background-attachment:  fixed;
+}
+
+.font{
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 2rem;
+ }
+.pie{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0.5rem;
+ }
+
+.hero{
+    /* tamaño de la imagen "size"*/
+    display: flex;
+    justify-content:center
+}
+
+h1{
+    color:rgb(221, 15, 15);
+    background: rgba(197, 163, 163, 0.7);
+    padding: 10px;
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;
+    text-decoration: none;  /*para sacarle el subrayado + demas caracteristicas */
+     font-size: 1.5rem;
+    text-align: center;
+}
+h3{
+    color:rgb(221, 15, 15);
+    padding: 10px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1.3rem;
+    /*para sacarle el subrayado + demas caracteristicas*/
+    text-decoration: none;  
+    text-align: center;
+}
+.container{
+    display: flex;
+    padding: auto;
+    margin: 10px 10px 10px 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.box{
+    margin:auto;
+}
+
+/* Textos */
+.texto{
+    background: rgba(197, 163, 163, 0.7);
+    padding: 1rem;
+    margin:0.5rem;
+    gap: 2rem;
+    color:rgb(221, 15, 15);
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1.5rem;
+    justify-content:center;
+    text-align:center;
+}
+.text-align-center{
+    text-align: center;
+}
+.text-align-start{
+    text-align:start;
+}
+
+/* clases para width */
+.w-100{
+    width: 100%; 
+}
+.w-95{
+    width: 95%;
+}
+.w-90{
+    width: 90%;
+} 
+.w-70{
+    width: 70%;
+}
+.w-50{
+    width: 50%;
+}
+.w-30{
+    width: 30%;
+}
+
+/* clases para height */
+.h-90{
+    height: 90%;
+}
+.h-75{
+    height: 75%;
+}
+.h-550{
+    height: 550px;
+}
+.h-480{
+    height: 480px;
+}
+.h-340{
+    height: 340px;
+}
+
+.borde{
+    border: dotted rgb(221, 15, 15) 0.1rem;  /* border:top*/
+    padding: 1rem;
+    margin: 1rem;
+}
+
+/* Flex */
+.flex-direction-column{
+    flex-direction: column;
+}
+.flex-direction{
+    flex-direction: row;
+}
+
+/* para tener mas de 1 fila */
+.flex-wrap{
+    flex-wrap: wrap
+}
+
+/* GRID */
+.grid{
+    width: 100%;
+    display: grid;
+    
+}
+.template-areas{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 5px 800px 100px;
+    grid-template-areas:
+    "head head head"
+    "nav"
+    "main main main"
+    "h3 footer footer ";
+}
+#menu{
+    grid-area: head;
+}
+#banner{
+    grid-area: nav;
+}
+#grid-pie{
+    grid-area: footer;
+}
+#grid-h3{
+    grid-area: h3;
+}
+
+/* eje y */
+.justify-items{
+    justify-items:center;
+}
+/* eje x */
+.align-items{
+    align-items: center;
+}
+.grid-header{
+    font-size: 2rem;
+    background-color: rgba(211, 162, 77, 0.489);   
+}
+.grid-footer{
+    padding: 10px;
+    margin: 10px;
+    font-size: 2rem;
+    background-color: rgba(197, 163, 163, 0.7);
+    position: relative;
+}
+.div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s;
+}
+#div5 {
+    transition-timing-function: ease-in-out;
+}
+.div:hover {
+    width: 300px;
+}
