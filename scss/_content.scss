@@ -1,5 +1,6 @@
 //letra de todas las paginas//
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+$theme-colors: map-remove($theme-colors, "info", "light", "dark", "danger");
 
 //colores//
 //el signo $ es para crear a las variables//
@@ -143,10 +144,7 @@ body{
 .align-items{
    align-items: center;
 }
-.grid-header{
-   font-size: 2rem;
-   background-color: rgba(197, 163, 163, 0.7);  
-}
+  
 .grid-footer{
    padding: 10px;
    margin: 10px;
@@ -174,4 +172,8 @@ body{
 
 .div:hover {
    width: $p-300px;
+}
+
+.btn {
+   bottom: $btnDanger;
 }

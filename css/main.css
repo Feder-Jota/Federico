@@ -58,7 +58,7 @@ body nav {
   padding: 1rem;
   margin: 0.5rem;
   gap: 2rem;
-  color: rgb(255, 67, 67);
+  color: #ff4343;
   font-family: "Share Tech Mono", monospace;
   font-size: 1.5rem;
   justify-content: center;
@@ -112,11 +112,6 @@ body nav {
   align-items: center;
 }
 
-.grid-header {
-  font-size: 2rem;
-  background-color: rgba(197, 163, 163, 0.7);
-}
-
 .grid-footer {
   padding: 10px;
   margin: 10px;
@@ -144,4 +139,4 @@ body nav {
 
 .div:hover {
   width: 300px;
-}/*# sourceMappingURL=main.css.map */
+}

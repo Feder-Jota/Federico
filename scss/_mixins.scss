@@ -1,1 +1,22 @@
 
+
+@mixin h3 ($colr, $size) {
+   font-size:$size;
+   color:$colr; 
+}
+
+.texto{
+   @extend h3;
+      padding: 1rem;
+      margin: 0.5rem;
+      gap: 2rem;
+      font-family: "Share Tech Mono", monospace;
+
+   @extend .contacto;
+      padding: 10px;
+      margin: 10px;
+      font-size: 2rem;
+      background-color: $colr;
+      position: relative;
+      display: grid;
+ }
