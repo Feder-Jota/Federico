@@ -1,0 +1,177 @@
+//letra de todas las paginas//
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+//colores//
+//el signo $ es para crear a las variables//
+$mainColor: rgb(255, 67, 67);
+$backgroundColor: rgba(197, 163, 163, 0.7);
+$fondo: url(../img/pngegg.png);
+
+$fontSizeH1: 1.7rem;
+$fontSizeH2: 1.5rem;
+$fontSizeH3: 1.3rem;
+
+//texto//
+$padding1rem: 1rem;
+$margin05rem:0.5rem;
+$gap2rem: 2rem;
+$fontSizetexto: 1.5rem;
+$justifyContent:center;
+$textAlign:center;
+$fontgral: 'Share Tech Mono', monospace;
+
+//width//
+$w-100:  100%;
+$w-95:   95%;
+$w-90:   90%;
+
+//width+height video//
+
+$p-300px: 300px;
+$p-480px: 480px;
+
+
+*{
+   margin: 0;
+   padding: 0;
+}
+
+html{
+   font-size: 62.5%; /*para usar rem tamaño de letra*/
+}
+
+h1{
+   color:$mainColor;
+   font-size:$fontSizeH1;
+}
+
+h2{
+   color:$mainColor;
+   font-size:$fontSizeH2;
+}
+
+h3{
+   color:$mainColor;
+   font-size:$fontSizeH3;
+}
+
+body{
+   background-image: $fondo;
+   background-repeat:  repeat ;
+   background-attachment:  fixed;
+      nav{
+         background-color: $backgroundColor; 
+         color: $mainColor;
+         padding: $padding1rem;
+         margin: $margin05rem;
+         gap: $gap2rem;
+         font-size: $fontSizetexto;
+         justify-content: $justifyContent;
+         text-align: $textAlign;
+         }
+}
+
+
+.container{
+   display: flex;
+   padding: auto;
+   margin: 10px 10px 10px 10px;
+   box-sizing: border-box;
+   text-align: center;
+}
+
+.box{
+   margin:auto;
+}
+
+/* Textos */
+.texto{
+   background: $backgroundColor;
+   padding: $padding1rem;
+   margin:  $margin05rem;
+   gap:  $gap2rem;
+   color:$mainColor;
+   font-family: $fontgral;
+   font-size: $fontSizetexto;
+   justify-content:  $justifyContent;
+   text-align: $textAlign;
+}
+
+
+/* clases para width */
+.w-100{
+   width: $w-100; 
+}
+.w-95{
+   width: $w-95;
+}
+.w-90{
+   width: $w-90;
+}
+
+.p-300{
+   width: $p-300px;
+}
+
+/* clases para height */
+.h-480{
+   height: $p-480px;
+}
+
+
+
+/* GRID */
+.grid{
+   width: 100%;
+   display: grid;
+}
+
+.contacto{
+   padding: 10px;
+   margin: 10px;
+   font-size: 2rem;
+   background-color: rgba(197, 163, 163, 0.7);
+   position: relative;
+   display: grid;
+}
+
+/* eje y */
+.justify-items{
+   justify-items:center;
+}
+/* eje x */
+.align-items{
+   align-items: center;
+}
+.grid-header{
+   font-size: 2rem;
+   background-color: rgba(197, 163, 163, 0.7);  
+}
+.grid-footer{
+   padding: 10px;
+   margin: 10px;
+   font-size: 2rem;
+   background-color: $backgroundColor;
+   position: relative;
+}
+
+.pie{
+   display: flex;
+   justify-content: space-evenly;
+   margin: $margin05rem;
+}
+
+.div {
+   width: 100px;
+   height: 100px;
+   background: $mainColor;
+   transition: width 2s;
+}
+
+#div5 {
+   transition-timing-function: ease-in-out;
+}
+
+.div:hover {
+   width: $p-300px;
+}
